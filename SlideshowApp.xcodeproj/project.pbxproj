@@ -12,6 +12,10 @@
 		DC5153AC202EEEED008062F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5153AA202EEEED008062F6 /* Main.storyboard */; };
 		DC5153AE202EEEED008062F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC5153AD202EEEED008062F6 /* Assets.xcassets */; };
 		DC5153B1202EEEED008062F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5153AF202EEEED008062F6 /* LaunchScreen.storyboard */; };
+		DC5153BB202F03D7008062F6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5153B8202F03D6008062F6 /* 2.jpg */; };
+		DC5153BC202F03D7008062F6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5153B9202F03D7008062F6 /* 3.jpg */; };
+		DC5153BD202F03D7008062F6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC5153BA202F03D7008062F6 /* 1.jpg */; };
+		DC5153BF202F16C8008062F6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5153BE202F16C8008062F6 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		DC5153AD202EEEED008062F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC5153B0202EEEED008062F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC5153B2202EEEED008062F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5153B8202F03D6008062F6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		DC5153B9202F03D7008062F6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		DC5153BA202F03D7008062F6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		DC5153BE202F16C8008062F6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +46,8 @@
 		DC51539A202EEEED008062F6 = {
 			isa = PBXGroup;
 			children = (
-				DC5153A5202EEEED008062F6 /* SlideshowApp */,
 				DC5153A4202EEEED008062F6 /* Products */,
+				DC5153A5202EEEED008062F6 /* SlideshowApp */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,26 @@
 		DC5153A5202EEEED008062F6 /* SlideshowApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC5153A6202EEEED008062F6 /* AppDelegate.swift */,
-				DC5153A8202EEEED008062F6 /* ViewController.swift */,
-				DC5153AA202EEEED008062F6 /* Main.storyboard */,
-				DC5153AD202EEEED008062F6 /* Assets.xcassets */,
-				DC5153AF202EEEED008062F6 /* LaunchScreen.storyboard */,
 				DC5153B2202EEEED008062F6 /* Info.plist */,
+				DC5153A6202EEEED008062F6 /* AppDelegate.swift */,
+				DC5153BE202F16C8008062F6 /* ImageViewController.swift */,
+				DC5153A8202EEEED008062F6 /* ViewController.swift */,
+				DC5153AD202EEEED008062F6 /* Assets.xcassets */,
+				DC5153C7202F2AF4008062F6 /* images */,
+				DC5153AF202EEEED008062F6 /* LaunchScreen.storyboard */,
+				DC5153AA202EEEED008062F6 /* Main.storyboard */,
 			);
 			path = SlideshowApp;
+			sourceTree = "<group>";
+		};
+		DC5153C7202F2AF4008062F6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DC5153BA202F03D7008062F6 /* 1.jpg */,
+				DC5153B8202F03D6008062F6 /* 2.jpg */,
+				DC5153B9202F03D7008062F6 /* 3.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,9 +143,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5153BD202F03D7008062F6 /* 1.jpg in Resources */,
 				DC5153B1202EEEED008062F6 /* LaunchScreen.storyboard in Resources */,
+				DC5153BC202F03D7008062F6 /* 3.jpg in Resources */,
 				DC5153AE202EEEED008062F6 /* Assets.xcassets in Resources */,
 				DC5153AC202EEEED008062F6 /* Main.storyboard in Resources */,
+				DC5153BB202F03D7008062F6 /* 2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC5153A9202EEEED008062F6 /* ViewController.swift in Sources */,
+				DC5153BF202F16C8008062F6 /* ImageViewController.swift in Sources */,
 				DC5153A7202EEEED008062F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
